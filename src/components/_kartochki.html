@@ -1,0 +1,18 @@
+<div>
+    <div>
+        <img src="@@cardImg.webp" alt="@@alt">
+        @@if (cardImgSale !== false) {
+        <img src="@@cardImgSale.webp" alt="@altsale">
+        }
+    </div>
+    <div class="card__product__body">
+        <span>@@cardTitle</span>
+        <p>@@cardDescription</p>
+        <div>
+            <span>Rp @@cardPrice</span>
+            @@if (cardSale !== false) {
+                <span class="card__product__sale">Rp @@cardSale</span>
+            }
+        </div>
+    </div>
+</div>

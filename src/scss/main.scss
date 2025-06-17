@@ -6,7 +6,7 @@
 @use 'base/typography';
 @use 'base/layout';
 
-// ==== 3. Layout ====
+ //==== 3. Layout ====
 @use 'layout/container';
 
 // ==== 4. Components ====
@@ -16,7 +16,194 @@
 body {
   background-color: var(--main-color);
 }
-.logochelo{
+header{
   display: flex;
-  background-color: blue;
+  margin-top: 30px;
+}
+
+.header__logochelo{
+  gap: 20px;
+  display: flex;
+  margin-left: 49px;
+  &__Furniro{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+  }
+  &__img{
+    width: 50px;
+    height: 32px;
+  }
+}
+
+.header__display{
+  margin-left: 340px;
+  display: flex;
+  gap: 123px;
+  margin-top: 16px;
+  &__txt{
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.header__navigator{
+  margin-left: 340px;
+  display: flex;
+  gap: 75px;
+  margin-top: 16px;
+  &__img{
+    width: 23px;
+    height: 18px;
+  }
+}
+.main1{
+  margin-top: -80px;
+  background-image: url("../images/sca.webp");
+  width: 1920px;
+  height: 716.83px;
+
+  &__block1{
+    margin-left: 1000px;
+    padding-top: 160px;
+    background-color: #FFF;
+    width: 643px;
+    height: 443px;
+    border-radius: 4px;
+
+    &__h1{
+      padding-top: 102px;
+      padding-left: 64px;
+
+    }
+    &__h2{
+      font-size: 52px;
+      color: #B88E2F;
+      padding-left: 64px;
+      padding-top: 12px;
+
+    }
+    &__h3{
+      font-size: 18px;
+      padding-left: 64px;
+      padding-top: 12px;
+
+    }
+    &__btn{
+      margin-left: 64px;
+      margin-top: 12px;
+      width: 222px;
+      height: 74px;
+      background-color: #B88E2F;
+      border: none;
+      color: #FFFFFF;
+    }
+  }
+}
+.main2{
+  text-align: center;
+  &__h1{
+    font-weight: 600;
+    font-size: 32px;
+  }
+  &__h2{
+    font-weight: 400;
+    font-size: 20px;
+    color: #666666;
+  }
+  &__block1{
+    display: flex;
+    text-align: center;
+  }
+}
+.footer{
+  display: flex;
+  gap: 200px;
+  padding-left: 160px;
+  padding-top: 80px;
+  &__1st{
+    &__furniro{
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 90px;
+    }
+    &__txt{
+      padding-top: 40px;
+      font-weight: 350;
+      font-size: 16px;
+      color: #9F9F9F;
+    }
+  }
+  &__2st{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 90px;
+    &__links{
+      color: #9F9F9F;
+    }
+  }
+  &__3st{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 90px;
+    &__help{
+      color: #9F9F9F;
+    }
+  }
+  &__4st{
+    &__txt{
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 90px;
+      color: #9F9F9F;
+    }
+    &__rect1{
+
+    }
+    &__form{
+      padding-top: 20px;
+      display: flex;
+
+      &__inp{
+        width: 180px;
+        height: 80px;
+
+        &__input{
+          border: none;
+          background-color: #e3e3e3;
+        }
+        &__rect1{
+          width: 170px;
+          height: 1px;
+          background-color: #9F9F9F;
+        }
+      }
+      &__btn{
+        width: 90px;
+        height: 50px;
+        background-color: #e3e3e3;
+        &__but{
+          border: none;
+          //background-color: #B88E2F;
+        }
+        &__rect2{
+          width: 90px;
+          height: 1px;
+          background-color: #9F9F9F;
+        }
+      }
+    }
+  }
+}
+.footer__rect{
+  margin-left: 160px;
+  width: 1600px;
+  height: 1px;
+  text-align: center;
+  background-color: #666666;
+}
+.footer__txt{
+  font-size: 24px;
+  margin-left: 160px;
+  margin-top: 24px;
 }
