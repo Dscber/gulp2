@@ -10,56 +10,17 @@
 @use 'layout/container';
 
 // ==== 4. Components ====
-@use 'components/button';
+@use 'components/footer';
 @use 'components/card';
+@use 'components/header';
 
 body {
   background-color: var(--main-color);
 }
-header{
-  display: flex;
-  margin-top: 30px;
-}
 
-.header__logochelo{
-  gap: 20px;
-  display: flex;
-  margin-left: 49px;
-  &__Furniro{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 34px;
-  }
-  &__img{
-    width: 50px;
-    height: 32px;
-  }
-}
-
-.header__display{
-  margin-left: 340px;
-  display: flex;
-  gap: 123px;
-  margin-top: 16px;
-  &__txt{
-    font-weight: 400;
-    font-size: 16px;
-  }
-}
-
-.header__navigator{
-  margin-left: 340px;
-  display: flex;
-  gap: 75px;
-  margin-top: 16px;
-  &__img{
-    width: 23px;
-    height: 18px;
-  }
-}
 .main1{
   margin-top: -80px;
-  background-image: url("../images/sca.webp");
+  background-image: url("../images/str1_1_1.webp");
   width: 1920px;
   height: 716.83px;
 
@@ -105,105 +66,152 @@ header{
   &__h1{
     font-weight: 600;
     font-size: 32px;
+    padding-top: 48px;
   }
   &__h2{
     font-weight: 400;
     font-size: 20px;
     color: #666666;
+    padding-top: 16px;
   }
   &__block1{
     display: flex;
     text-align: center;
+    gap: 120px;
+    margin-left: 240px;
   }
 }
-.footer{
+.main3__btn{
+  margin-top: 36px;
+  margin-left: 810px;
+}
+.main3__but{
+  width: 245px;
+  height: 48px;
+  color: #B88E2F;
+  border: 1px solid #B88E2F;
+}
+.main4{
+  margin-top: 64px;
   display: flex;
-  gap: 200px;
-  padding-left: 160px;
-  padding-top: 80px;
-  &__1st{
-    &__furniro{
-      font-weight: 800;
-      font-size: 32px;
-      line-height: 90px;
+  &__50bt{
+    padding-top: 120px;
+    margin-left: 240px;
+    &__50txt{
+      font-weight: 600;
+      font-size: 40px;
     }
     &__txt{
-      padding-top: 40px;
-      font-weight: 350;
-      font-size: 16px;
-      color: #9F9F9F;
-    }
-  }
-  &__2st{
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 90px;
-    &__links{
-      color: #9F9F9F;
-    }
-  }
-  &__3st{
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 90px;
-    &__help{
-      color: #9F9F9F;
-    }
-  }
-  &__4st{
-    &__txt{
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 90px;
-      color: #9F9F9F;
-    }
-    &__rect1{
+      padding-top: 8px;
 
     }
-    &__form{
-      padding-top: 20px;
-      display: flex;
+    &__btn{
+      padding-top: 16px;
+    }
+    &__but{
+      width: 176px;
+      height: 48px;
+      color: white;
+      background-color: #B88E2F;
+      border: none;
+    }
+  }
+  &__img{
+    display: flex;
 
-      &__inp{
-        width: 180px;
-        height: 80px;
+  }
+  &__kv{
+    position: relative;
+    &__bel{
+      position: absolute;
+      z-index: 2;
+      top: 400px;
+      left: 32px;
 
-        &__input{
-          border: none;
-          background-color: #e3e3e3;
-        }
-        &__rect1{
-          width: 170px;
+      width: 250px;
+      height: 150px;
+      background-color: white;
+      color: #666666;
+      &__txt{
+        font-size: 16px;
+        padding-top: 52px;
+        padding-left: 32px;
+        gap: 8px;
+        display: flex;
+        &__rect{
+          width: 12px;
           height: 1px;
-          background-color: #9F9F9F;
+          background-color: #666666;
+          margin-top: 9px;
+        }
+        &__t4{
+          color: black;
+          padding-left: 32px;
+          font-size: 28px;
+          font-weight: 600;
         }
       }
-      &__btn{
-        width: 90px;
-        height: 50px;
-        background-color: #e3e3e3;
-        &__but{
-          border: none;
-          //background-color: #B88E2F;
+    }
+    &__or{
+      position: absolute;
+      z-index: 3;
+      top: 502px;
+      left: 282px;
+
+      width: 48px;
+      height: 48px;
+      background-color: #B88E2F;
+      &__ctrela {
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        width: 60%; // 32px
+        height: 2px; // Толщина линии
+        background-color: white;
+        border-radius: 1px; // Округление краев (половина от высоты)
+        transform: translateY(-50%); // Центрируем по вертикали
+
+        // Стрелочка (треугольник справа)
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          width: 8px; // Длина "крыльев" стрелки
+          height: 2px;
+          background-color: white;
+          border-radius: 1px; // Округление краев
         }
-        &__rect2{
-          width: 90px;
-          height: 1px;
-          background-color: #9F9F9F;
+
+        &::before {
+          top: 0.5px;
+          transform: rotate(45deg); // Верхняя часть стрелки
+          transform-origin: right center;
+        }
+
+        &::after {
+          bottom: 0.5px;
+          transform: rotate(-45deg); // Нижняя часть стрелки
+          transform-origin: right center;
         }
       }
     }
   }
 }
-.footer__rect{
-  margin-left: 160px;
-  width: 1600px;
-  height: 1px;
+.main5{
+  margin-top: 48px;
   text-align: center;
-  background-color: #666666;
+  &__h1{
+    font-size: 24px;
+  }
+  &__h2{
+    font-size: 48px;
+    font-weight: 600;
+  }
+  &__img{
+    width: 1710px;
+  }
 }
-.footer__txt{
-  font-size: 24px;
-  margin-left: 160px;
-  margin-top: 24px;
+.display{
+  display: flex;
 }

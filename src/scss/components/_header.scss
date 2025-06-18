@@ -1,0 +1,41 @@
+header{
+  display: flex;
+  margin-top: 30px;
+}
+
+.header__logochelo{
+  gap: 20px;
+  display: flex;
+  margin-left: 49px;
+  &__Furniro{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+  }
+  &__img{
+    width: 50px;
+    height: 32px;
+  }
+}
+
+.header__display{
+  margin-left: 340px;
+  display: flex;
+  gap: 123px;
+  margin-top: 16px;
+  &__txt{
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.header__navigator{
+  margin-left: 340px;
+  display: flex;
+  gap: 75px;
+  margin-top: 16px;
+  &__img{
+    width: 23px;
+    height: 18px;
+  }
+}
